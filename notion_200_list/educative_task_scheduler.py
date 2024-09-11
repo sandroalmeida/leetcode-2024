@@ -5,7 +5,7 @@ def leastInterval(tasks, n):
     for task in tasks:
         frequencies[task] = frequencies.get(task, 0) + 1
 
-    # sorting the dict
+     # sorting the dict
     sorted_frequencies = sorted(frequencies.items(), key=lambda item:item[1], reverse=True)
 
     # finding the max frequent item for calculating the idle time considering only this item
